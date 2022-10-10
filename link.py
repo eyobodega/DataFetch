@@ -23,5 +23,5 @@ def linkcall(pagenumber):
 for x in range(1, 21):
     linkcall(x)
 for x in array_links:
-    print(x)
-    print("\n")
+    with open("outputs/outputs.txt", "a") as f:
+        print(x, file=f)
